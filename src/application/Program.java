@@ -22,12 +22,16 @@ public class Program {
                 UI.printBoard(chessMatch.getPieces());
                 System.out.println();
                 System.out.print("Sorce: ");
-                ChessPosition souce = UI.readChessPosition(scanner);
+                ChessPosition source = UI.readChessPosition(scanner);
+
+                boolean[][] possibleMoves = chessMatch.possibleMoves(source);
+                UI.clearScrenn();
+                UI.printBoard(chessMatch.getPieces(), possibleMoves);
 
                 System.out.print("Target: ");
                 ChessPosition target = UI.readChessPosition(scanner);
 
-                ChessPiece capturedPiece = chessMatch.performChessMove(souce, target);
+                ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
             }
             catch (ChessException | InputMismatchException e) {
                 System.out.println(e.getMessage());
