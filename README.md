@@ -2,6 +2,8 @@
 
 Um jogo de xadrez completo e 100% funcional, desenvolvido em **Java puro** para ser executado diretamente no seu terminal.
 
+<img src="static/Print jogo xardez java.png" style="height: 18rem; align-self: center;">
+
 ## Sobre o Jogo
 
 Este projeto é uma implementação do clássico jogo de xadrez, sem a necessidade de qualquer interface gráfica. Toda a interação, desde a visualização do tabuleiro até a movimentação das peças, acontece no terminal. O jogo foi cuidadosamente desenvolvido para incluir todas as regras oficiais, incluindo movimentos especiais complexos.
