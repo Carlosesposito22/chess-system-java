@@ -24,7 +24,7 @@ public class Program {
                 UI.clearScrenn();
                 UI.printMatch(chessMatch, captured);
                 System.out.println();
-                System.out.print("Sorce: ");
+                System.out.print("Source: ");
                 ChessPosition source = UI.readChessPosition(scanner);
 
                 boolean[][] possibleMoves = chessMatch.possibleMoves(source);
